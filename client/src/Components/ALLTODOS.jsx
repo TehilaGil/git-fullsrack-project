@@ -32,7 +32,7 @@ const ALLTODOS = () => {
             <button onClick={() => { dispatch({ type: "Add",what:{id:refid.current.value,name:refname.current.value} }) }}>Add</button>
 
             {state.map(a => { return <Todo state={{ id: a.id, name: a.name }} dispatch={dispatch} /> })}
-            some words to add...
+            add...
         </>
     )
 }
